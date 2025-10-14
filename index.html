@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.7/dist/themes/modern.min.css" media="print">
   <title>cv - Mauro Gestoso</title>
   <meta name="description" content="">
+
+  <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
+
   <style>
     main {
       max-width: 800px;
@@ -47,8 +51,8 @@
 
 <body>
   <main>
-      <pre><code class="language-json">
-      { "email": "maurogestoso@gmail.com", "location": "Castellón, Spain (CET)" }
+    <pre><code class="language-json">
+        { "email": "maurogestoso@gmail.com", "location": "Castellón, Spain (CET)" }
       </code></pre>
     <h1>Mauro Gestoso - Software Engineer</h1>
     <blockquote>
@@ -58,9 +62,9 @@
       about
       their users and tries to build a healthy team culture.
     </blockquote>
-    <code>
-      { "age": 36, "married": true, "children": 1, "drinks": "filter coffee" }
-    </code>
+    <pre><code class="language-json">
+        { "age": 36, "married": true, "children": 1, "drinks": "filter coffee" }
+      </code></pre>
     <h2>Work Experience</h2>
     <article class="experience">
       <header>
@@ -169,10 +173,7 @@
           use of AWS Serverless offerings and GraphQL.</li>
       </ul>
     </article>
-    <script src="https://unpkg.com/browse/prismjs@1/components/prism-core.min.js"></script>
-    <script src="https://unpkg.com/browse/prismjs@1/plugins/autoloader/prism-autoloader.min.js"></script>
   </main>
-
   <template id="experience">
     <article class="experience">
       <header>
@@ -193,6 +194,10 @@
       </ul>
     </article>
   </template>
+
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/languages/json.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
 </body>
 
 </html>

@@ -23,6 +23,10 @@
       & h3 {
         margin: 0;
       }
+
+      & time {
+        font-size: 12px;
+      }
     }
 
     article.experience ul.technologies {
@@ -43,9 +47,9 @@
 
 <body>
   <main>
-    <code class="language-json">
+      <pre><code class="language-json">
       { "email": "maurogestoso@gmail.com", "location": "Castellón, Spain (CET)" }
-    </code>
+      </code></pre>
     <h1>Mauro Gestoso - Software Engineer</h1>
     <blockquote>
       I’m a curious and empathetic engineer always striving for simplicity. I enjoy working in diverse, collaborative
@@ -54,9 +58,9 @@
       about
       their users and tries to build a healthy team culture.
     </blockquote>
-      <code>
-        { "age": 36, "married": true, "children": 1, "drinks": "filter coffee" }
-      </code>
+    <code>
+      { "age": 36, "married": true, "children": 1, "drinks": "filter coffee" }
+    </code>
     <h2>Work Experience</h2>
     <article class="experience">
       <header>
@@ -111,7 +115,84 @@
         <li>Participated in the hiring process, onboarded and mentored junior members of the team</li>
       </ul>
     </article>
+    <article class="experience">
+      <header>
+        <h3>Software Consultant @ <a
+            href="https://newsroom.accenture.com/news/2021/accenture-expands-cloud-first-offerings-and-engineering-capabilities-in-the-uk-with-acquisition-of-infinity-works">Infinity
+            Works/Accenture</a></h3>
+        <time>Apr 2019 - Jan 2021 (1y 9m)</time>
+      </header>
+      <p>Cloud and digital transformation consultancy (Consultancy, Healthcare, Logistics)</p>
+      <ul class="technologies">
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Golang</li>
+        <li>React Native</li>
+        <li>Dynamo DB</li>
+        <li>AWS (Serverless)</li>
+        <li>IoT</li>
+      </ul>
+      <ul class="responsibilities">
+        <li>Assisted a leading pharmacy chain in their digital transformation by implementing AWS cloud computing,
+          DevOps, and Agile methodologies.</li>
+        <li>Created a scalable event-driven backend system using Go and AWS serverless tools to link stores with
+          warehouse fulfillment robots.</li>
+        <li>Mastered diverse technologies quickly including Golang, DynamoDB database modeling, and Serverless
+          architecture.</li>
+        <li>Contributed to the development and upkeep of a React Native and TypeScript mobile app for prescription
+          ordering by customers.</li>
+        <li>Offered technical assistance to clients and participated in on-call responsibilities.</li>
+        <li>Designed internal solutions integrating backend services with IoT devices for automating manual tasks in
+          warehouse operations.</li>
+      </ul>
+    </article>
+    <article class="experience">
+      <header>
+        <h3>Junior Software Engineer @ <a href="https://www.bbc.com/sport">BBC Sport</a></h3>
+        <time>Mar 2018 - Mar 2019 (1y)</time>
+      </header>
+      <p>One of the largest news providers in the world (Media, Platform, DevOps)</p>
+      <ul class="technologies">
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Redis</li>
+        <li>AWS</li>
+      </ul>
+      <ul class="responsibilities">
+        <li>Focused on scalability and reliability for high-demand events like breaking news and major sporting events.
+        </li>
+        <li>Contributed to maintaining the internal server-side rendering and caching platform for BBC News and Sport
+          websites. We worked with Lambda functions and Server Side Rendering before they became mature technologies.
+        </li>
+        <li>Contributed to the design and proof of concept phase of the next iteration of the platform, researching the
+          use of AWS Serverless offerings and GraphQL.</li>
+      </ul>
+    </article>
+    <script src="https://unpkg.com/browse/prismjs@1/components/prism-core.min.js"></script>
+    <script src="https://unpkg.com/browse/prismjs@1/plugins/autoloader/prism-autoloader.min.js"></script>
   </main>
+
+  <template id="experience">
+    <article class="experience">
+      <header>
+        <h3>ROLE @ <a href="COMPANY_WEBSITE">COMPANY_NAME</a></h3>
+        <time>START - END (DURATION)</time>
+      </header>
+      <p>DESCRIPTION (TAGS)</p>
+      <ul class="technologies">
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>GCP</li>
+      </ul>
+      <ul class="responsibilities">
+        <li></li>
+      </ul>
+    </article>
+  </template>
 </body>
 
 </html>

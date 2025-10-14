@@ -5,17 +5,170 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.7" media="print">
+  <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.7/dist/themes/modern.min.css" media="print">
   <title>cv - Mauro Gestoso</title>
   <meta name="description" content="">
+  <style>
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      font-family: system-ui;
+    }
+
+    article.experience header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & h3 {
+        margin: 0;
+      }
+    }
+
+    article.experience ul.technologies {
+      display: flex;
+      width: 100%;
+      list-style: none;
+      gap: 4px;
+      padding: 0;
+
+      & li {
+        background-color: pink;
+        padding: 4px 8px;
+        border-radius: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js">
-    console.log("Hello")
-  </script>
-
+  <main>
+    <code class="language-json">
+      { "email": "maurogestoso@gmail.com", "location": "Castellón, Spain (CET)" }
+    </code>
+    <h1>Mauro Gestoso - Software Engineer</h1>
+    <blockquote>
+      I’m a curious and empathetic engineer always striving for simplicity. I enjoy working in diverse, collaborative
+      and
+      product-focused environments. I'm looking for a company that has a clear vision of their product, cares deeply
+      about
+      their users and tries to build a healthy team culture.
+    </blockquote>
+      <code>
+        { "age": 36, "married": true, "children": 1, "drinks": "filter coffee" }
+      </code>
+    <h2>Work Experience</h2>
+    <article class="experience">
+      <header>
+        <h3>Product Engineer @ <a href="https://www.audiense.com/">Audiense</a></h3>
+        <time>Nov 2022 - Nov 2024 (2y)</time>
+      </header>
+      <p>Help companies understand their audience (Social Media, Marketing, BI, B2B)</p>
+      <ul class="technologies">
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+        <li>AWS</li>
+      </ul>
+      <ul class="responsibilities">
+        <li>Developed a B2B audience segmentation platform (dashboard + public API) handling large Twitter data volumes,
+          generating complex reports and integrating with various 3rd party services.</li>
+        <li>Led end-to-end feature development, including product meetings, deployment, maintenance, and technical
+          support.</li>
+        <li>Demonstrated expertise in testing (E2E, integration, UI components), software architecture, and
+          collaborative methodologies (pair programming, code reviews, asynchronous communication).</li>
+        <li>Contributed to transitioning from a monolithic legacy codebase to a modular architecture using Hexagonal
+          Architecture patterns and migrating to TypeScript.</li>
+        <li>Initiated a Frontend Guild to enhance team collaboration, knowledge sharing, and company-wide design system
+          implementation. Delivered knowledge sharing sessions and researched technologies to modernise our stack.</li>
+      </ul>
+    </article>
+    <article class="experience">
+      <header>
+        <h3>Frontend Engineer @ <a href="https://www.mercadona.es/">Mercadona</a></h3>
+        <time>Mar 2021 - Jun 2022 (1y 4m)</time>
+      </header>
+      <p>The largest supermarket chain in Spain (eCommerce, Logistics)</p>
+      <ul class="technologies">
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>GCP</li>
+      </ul>
+      <ul class="responsibilities">
+        <li>Developed and maintained the checkout process for a large groceries e-commerce platform using React.</li>
+        <li>Led a checkout flow redesign by implementing small, iterative changes to components, enabling frequent
+          deployments and reducing system risks significantly.</li>
+        <li>Contributed to the research, design, and development of an in-store checkout solution that expanded to
+          hundreds of stores.</li>
+        <li>Collaborated with product designers, actively engaging in user research, ideation, and design iterations.
+        </li>
+        <li>Regularly advocated for industry best practices and new technologies in guild meetings, conducting training
+          sessions on topics like React testing, accessibility and adoption of TypeScript</li>
+        <li>Participated in the hiring process, onboarded and mentored junior members of the team</li>
+      </ul>
+    </article>
+  </main>
 </body>
 
 </html>
+
+<!-- 
+
+EXPERIENCE
+Mercadona Online, Valencia, Spain — Frontend Engineer
+MAR 2021 - JUL 2022
+Multi-functional team centered in the checkout experience of one of the largest eCommerce websites in Spain.
+Implemented various features to improve the checkout experience, including a redesign of the UI, integrating with an A/B Testing platform and improvements around PSD2 regulations for online payments
+Built with React, Redux, custom Design System, GCP
+Strong focus on user-centric integration and E2E tests (testing–library, jest, cypress)
+Took part in the whole development cycle of a home delivery solution that will run in 1000+ supermarkets in the country
+Participated in the whole planning phase, several design workshops and volunteered for research and feature validation with real users
+Collaborated closely with the designer to develop the UI and improve the UX on a very limited touchscreen device
+Introduced new technologies that enabled rapid iteration and improved code maintainability such as TailwindCSS and TypeScript.
+Collaborated with backend and SRE engineers on system monitoring, the deployment strategy and automation that allowed us to scale up from one to hundreds of stores.
+
+Infinity Works, Manchester, UK — Software Consultant
+APR 2019 - JAN 2021
+Mobile app that lets users order their prescription medicines and receive them at home (built with React Native, Redux, TypeScript, Go backend in AWS, SQL and DynamoDB databases)
+Improved the delivery experience with features such as Premium Delivery, Click & Collect, better status tracking and integrating with multiple courier services
+Scaled massively the application’s back-end systems in response to the COVID-19 crisis thanks to our use of serverless technologies
+Internal CRM web app that allows pharmacists, warehouse operators and customer support track orders, users and deliveries (built with React, Redux, Material UI, Go backend in AWS, DynamoDB database)
+Worked closely with the warehouse staff to constantly and progressively improve their experience
+Integrated the app with barcode scanners to greatly simplify manual tasks
+REST API and event-based back-end system that serves the app, web app and connects the physical stores with the warehouse fulfillment systems and processes (built with Go, AWS serverless services, multiple 3rd party services)
+Spent a lot of time refactoring and simplifying a large legacy codebase. Decoupled and reorganized the deployment of the API and the SQL database, reducing a 30mins monster process to 2 friendly 2mins processes.
+Collaborated closely with product management to develop quick proof-of-concepts that can be scaled safely into full features. Simplicity, testability and monitoring is the name of the game
+BBC Sport, Manchester, UK — Software Engineer
+MAR 2018 - MAR 2019
+Internal platform for server-side rendering and caching of a large portion of BBC Sport and News websites with millions of daily users and high spikes of traffic during major sporting events (built with NodeJS, AWS, Redis and React)
+Focused greatly on reliability, testing, monitoring and scalability. BBC systems cannot go down. Survived a World Cup, Winter Olympics and Wimbledon 💪
+Worked on the design and proof-of-concept phases of the next iteration of the platform, using serverless technologies and GraphQL
+Northcoders, Manchester, UK — Lead Instructor
+JUN 2016 - MAR 2018
+Produced and delivered a 3 month long, full-time course for 5 student cohorts, personally taught 100+ students
+Iteratively redesigned the learning materials and projects (simplified versions of popular apps such as Twitter, Trello, Reddit, etc.) in response to industry demands, new tech and student feedback. Ran lots of experiments, failed a lot, learned from it.
+Managed a team of 5 instructors and 20-30 students at a time.
+Spend countless hours pair programming and debugging students’ random issues. I have stories to tell.
+Other jobs
+I’ve fixed engines, designed a chemical plant in the Black Sea, managed a Makerspace, taught Math to pay for university, milked goats, felled trees and restored an old stone house in the countryside where I now live. I’m happy to talk about the many transferable skills I learned 😀
+
+
+EDUCATION
+Northcoders — Coding Bootcamp Graduate
+2016, MANCHESTER, UK
+Universitat Politècnica de València — Mechanical Engineering
+2007-2011, VALENCIA, SPAIN
+SKILLS
+⌨️ Fluent in JavaScript/TypeScript/NodeJS and very comfortable in the React ecosystem (Redux, hooks, Next.js, etc.). Experience with Golang and Python. I lean Frontend, but I’m not scared to get my hands dirty in other parts of the stack.
+🚀 Well versed in agile practices, user-focused and iterative product development, data-driven and user research-based decisions. Active participant in non-engineering meetings and team rituals.
+☁️ Experienced building, deploying and monitoring systems using AWS services. I’ve particularly enjoyed working with serverless architectures
+🚨 Comfortable owning the whole development cycle: deployments, maintaining CI/CD pipelines, monitoring production systems, providing technical support. “It’s not done until it’s working in production”.
+👌 Big advocate for industry best practices: rapid iteration, learning from users, testing and TDD, pair programming, code reviews, but most importantly: keeping things simple. “The solution is not always writing more code.”
+😀 Excellent communication skills in both Spanish🇪🇸 and English🇬🇧. I put a lot of effort into explaining things clearly, summarizing and simplifying, always paying attention to the context and who’s listening. 
+👫 Experience onboarding and mentoring new members of the team, interviewing candidates, delivering talks and workshops internally and at public events, teaching beginners.
+
+  -->

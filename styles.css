@@ -1,0 +1,65 @@
+p,
+blockquote,
+li,
+time {
+  line-height: 150%;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: system-ui;
+}
+
+h1,
+h2 {
+  font-family: Climate Crisis, system-ui;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+details>summary>h2 {
+  display: inline;
+}
+
+section#experience {
+  margin-top: 32px;
+}
+
+.experience-item,
+.education-item {
+  margin: 16px 0;
+
+  & header h3 {
+    margin: 0;
+  }
+
+  & header time {
+    font-size: 12px;
+  }
+}
+
+.experience-item ul.technologies {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  gap: 4px;
+  padding: 0;
+
+  & li {
+    padding: .30rem 1rem .5rem;
+    line-height: 150%;
+    border-radius: 16px;
+  }
+}

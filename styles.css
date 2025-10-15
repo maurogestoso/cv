@@ -18,19 +18,25 @@ h2 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 details>summary>h2 {
   display: inline;
+}
+
+section#contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 section#experience {
@@ -40,6 +46,7 @@ section#experience {
 .experience-item,
 .education-item {
   margin: 16px 0;
+  break-inside: avoid;
 
   & header h3 {
     margin: 0;
@@ -56,10 +63,65 @@ section#experience {
   list-style: none;
   gap: 4px;
   padding: 0;
+}
 
-  & li {
-    padding: .30rem 1rem .5rem;
-    line-height: 150%;
-    border-radius: 16px;
-  }
+ul.technologies>li {
+  color: white;
+  font-size: 12px;
+  padding: .35rem 1rem .5rem;
+  line-height: 150%;
+  border-radius: 16px;
+  font-family: monospace;
+}
+
+ul.technologies>li[data-technology="TypeScript"] {
+  background-color: #2F74C0;
+}
+
+ul.technologies>li[data-technology="React"] {
+  background-color: #087EA4;
+}
+
+ul.technologies>li[data-technology="React Native"] {
+  background-color: #087EA4;
+}
+
+ul.technologies>li[data-technology="Node.js"] {
+  background-color: #3C873A;
+}
+
+ul.technologies>li[data-technology="Golang"] {
+  background-color: #007D9C;
+}
+
+ul.technologies>li[data-technology="AWS"] {
+  background-color: #D97706;
+}
+
+ul.technologies>li[data-technology="GCP"] {
+  background-color: #3367D6;
+}
+
+ul.technologies>li[data-technology="SQL"] {
+  background-color: #A82424;
+}
+
+ul.technologies>li[data-technology="MongoDB"] {
+  background-color: #3E8E41;
+}
+
+ul.technologies>li[data-technology="DynamoDB"] {
+  background-color: #2D4BDD;
+}
+
+ul.technologies>li[data-technology="IoT"] {
+  background-color: #C25100;
+}
+
+ul.technologies>li[data-technology="Python"] {
+  background-color: #366E9B;
+}
+
+ul.technologies>li[data-technology="Redis"] {
+  background-color: #D82C20;
 }

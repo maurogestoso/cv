@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CV - Mauro Gestoso</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
-  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
@@ -18,9 +15,11 @@
 
 <body>
   <main>
-    <pre><code class="language-json">
-        { "email": "maurogestoso@gmail.com", "location": "Castellón, Spain (CET)" }
-      </code></pre>
+    <section id="contact">
+        <span>📧 <a href="mailto:maurogestoso@gmail.com">maurogestoso@gmail.com</a></span>
+      <span>📍 Castellón, Spain (CET)</span>
+    </section>
+
     <header>
       <h1>Mauro Gestoso</h1>
       <h2>Software Engineer</h2>
@@ -45,11 +44,11 @@
             <p>Help companies understand their audience (social media, marketing, BI, B2B)</p>
           </header>
           <ul class="technologies">
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>AWS</li>
+            <li data-technology="TypeScript">TypeScript</li>
+            <li data-technology="React">React</li>
+            <li data-technology="Node.js">Node.js</li>
+            <li data-technology="MongoDB">MongoDB</li>
+            <li data-technology="AWS">AWS</li>
           </ul>
           <ul class="responsibilities">
             <li>Developed a B2B audience segmentation platform (dashboard + public API) handling large Twitter data
@@ -74,12 +73,12 @@
             <p>The largest supermarket chain in Spain (ecommerce, logistics)</p>
           </header>
           <ul class="technologies">
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>GCP</li>
+            <li data-technology="TypeScript">TypeScript</li>
+            <li data-technology="React">React</li>
+            <li data-technology="Node.js">Node.js</li>
+            <li data-technology="Python">Python</li>
+            <li data-technology="SQL">SQL</li>
+            <li data-technology="GCP">GCP</li>
           </ul>
           <ul class="responsibilities">
             <li>Developed and maintained the checkout process for a large groceries e-commerce platform.
@@ -106,14 +105,14 @@
             <p>Cloud and digital transformation consultancy (consultancy, healthcare, logistics)</p>
           </header>
           <ul class="technologies">
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Golang</li>
-            <li>React Native</li>
-            <li>DynamoDB</li>
-            <li>AWS</li>
-            <li>IoT</li>
+            <li data-technology="TypeScript">TypeScript</li>
+            <li data-technology="React">React</li>
+            <li data-technology="Node.js">Node.js</li>
+            <li data-technology="Golang">Golang</li>
+            <li data-technology="React Native">React Native</li>
+            <li data-technology="DynamoDB">DynamoDB</li>
+            <li data-technology="AWS">AWS</li>
+            <li data-technology="IoT">IoT</li>
           </ul>
           <ul class="responsibilities">
             <li>Assisted a leading pharmacy chain in their digital transformation by implementing AWS cloud computing,
@@ -136,10 +135,10 @@
             <p>One of the largest news providers in the world (media, platform, DevOps)</p>
           </header>
           <ul class="technologies">
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Redis</li>
-            <li>AWS</li>
+            <li data-technology="React">React</li>
+            <li data-technology="Node.js">Node.js</li>
+            <li data-technology="Redis">Redis</li>
+            <li data-technology="AWS">AWS</li>
           </ul>
           <ul class="responsibilities">
             <li>Focused on scalability and reliability for high-demand events like breaking news and major sporting
@@ -209,7 +208,7 @@
         </article>
         <article class="education-item">
           <header>
-            <h3>BSc Mechanical Engineering @ <a href="https://www.upv.es/">Universitat Politecnica de Valencia</a></h3>
+            <h3>BSc Mechanical Engineering @ <a href="https://www.upv.es/">UPV</a></h3>
             <time>Sep 2007 - Jul 2011 (3y 9m)</time>
           </header>
           <ul>
@@ -239,33 +238,6 @@
       </details>
     </section>
   </main>
-
-  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.11.1/languages/json.min.js"></script>
-  <script>hljs.highlightAll();</script>
-
-  <script>
-    const techColors = {
-      "TypeScript": "#2F74C0",
-      "React": "#087EA4",
-      "React Native": "#087EA4",
-      "Node.js": "#3C873A",
-      "Golang": "#007D9C",
-      "AWS": "#D97706",
-      "GCP": "#3367D6",
-      "SQL": "#A82424",
-      "MongoDB": "#3E8E41",
-      "DynamoDB": "#2D4BDD",
-      "IoT": "#C25100",
-      "Python": "#366E9B",
-      "Redis": "#D82C20"
-    }
-
-    document.querySelectorAll("ul.technologies li").forEach(el => {
-      el.style = `color: white; background-color: ${techColors[el.textContent]}`
-    })
-
-  </script>
-
 </body>
 
 </html>
